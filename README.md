@@ -21,6 +21,8 @@ Bootstrap 5 uses a powerful mobile-first flexbox grid system to build layouts of
 
 ## `FB5Row` and `FB5Col`
 
-- **`FB5Row`**: This widget acts as a container for columns. It is similar to Bootstrap's `.row` class and is used to group `FB5Col` widgets. It ensures that columns are aligned properly and provides a responsive layout.
+- **`FB5Row**: This widget acts as a container for columns. It is similar to Bootstrap's `.row` class and is used to group `FB5Col` widgets. It ensures that columns are aligned properly and provides a responsive layout.
 
 - **`FB5Col`**: This widget represents a column within a `FB5Row`. It accepts a `sizes` parameter where you can specify how many columns it should span across different screen sizes using Bootstrap's responsive grid classes (e.g., `col-12`, `col-md-6`, `col-lg-4`).
+
+For a detailed guide, you can read the Medium article: [Building Responsive Flutter Web Applications with Bootstrap 5](https://medium.com/@aravinthc18/building-responsive-flutter-web-applications-with-bootstrap-5-7a6e0e6df17f).
