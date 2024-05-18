@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bootstrap5/Auth/login.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          useMaterial3: false,
+          scaffoldBackgroundColor: Colors.grey[300],
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(primary: Colors.deepPurple)),
+      home: Login(),
+    );
+  }
+}
