@@ -1,20 +1,4 @@
-import 'package:flutter/material.dart';
 
-class TableModule extends StatefulWidget {
-  const TableModule({super.key});
-
-  @override
-  State<TableModule> createState() => _TableModuleState();
-}
-
-class _TableModuleState extends State<TableModule> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
- /*
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -732,4 +716,3 @@ IconButton(
     );
   }
 }
-*/

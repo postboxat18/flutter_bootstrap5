@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  #dropdown_textfield: ^1.0.8
+  dropdown_textfield: ^1.0.8
   syncfusion_flutter_charts: ^25.2.3
   flutter_listfilter: ^0.0.3
   flutter_bloc: ^8.1.5
