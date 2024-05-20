@@ -1,4 +1,3 @@
-
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -483,14 +482,15 @@ class _TableModuleState extends State<TableModule> {
                                   columnIndexSort = columnIndex;
                                 });
                                 if (columnIndex == columnIndexSort) {
-List<DataTableList> existing=[];
-                                  for (int i = (selectedIndex - 1) * pageVisible;
-                                  i <
-                                      ((selectedIndex * pageVisible) >
-                                          dataTableList.length
-                                          ? dataTableList.length
-                                          : (selectedIndex * pageVisible));
-                                  i++){
+                                  List<DataTableList> existing = [];
+                                  for (int i =
+                                          (selectedIndex - 1) * pageVisible;
+                                      i <
+                                          ((selectedIndex * pageVisible) >
+                                                  dataTableList.length
+                                              ? dataTableList.length
+                                              : (selectedIndex * pageVisible));
+                                      i++) {
                                     existing.add(dataTableList[i]);
                                   }
 
@@ -568,15 +568,6 @@ List<DataTableList> existing=[];
                                       color: Colors.white,
                                     ),
                                   ),
-IconButton(
-                                  onPressed: () {
-
-                                  },
-                                  icon: Icon(
-                                    Icons.filter_alt_outlined,
-                                    color: Colors.white,
-                                  ))
-
                                 ],
                               )))
                           .toList(),
