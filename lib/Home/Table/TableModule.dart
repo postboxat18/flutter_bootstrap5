@@ -1,4 +1,3 @@
-
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -294,124 +293,6 @@ class _TableModuleState extends State<TableModule> {
     ]);
   }
 
-  getJson() {
-    return [
-      {
-        "RegNo": "1",
-        "PatName": "Mr.Devilaal",
-        "doctorname": "Dr.Ram",
-        "Age": "26 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "2",
-        "PatName": "Mr.Damodara",
-        "doctorname": "Dr.John",
-        "Age": "36 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "3",
-        "PatName": "Mr.Daler",
-        "doctorname": "Dr.Jenny",
-        "Age": "36 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "4",
-        "PatName": "Dr.Bhagat",
-        "doctorname": "Dr.Ram",
-        "Age": "36 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "5",
-        "PatName": "Mr.Bansi",
-        "doctorname": "Dr.John",
-        "Age": "37 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "6",
-        "PatName": "Mr.Balwant",
-        "doctorname": "Dr.Jenny",
-        "Age": "26 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "7",
-        "PatName": "Mr.Balvinder",
-        "doctorname": "Dr.Ram",
-        "Age": "26 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "8",
-        "PatName": "Mr.Abhay",
-        "doctorname": "Dr.Sam",
-        "Age": "26 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "9",
-        "PatName": "Mr.Dev",
-        "doctorname": "Dr.Sam",
-        "Age": "36 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "10",
-        "PatName": "Mr.Bani",
-        "doctorname": "Dr.Ram",
-        "Age": "39 Y",
-        "sex": "FEMALE",
-      },
-      {
-        "RegNo": "11",
-        "PatName": "Mr.DON",
-        "doctorname": "Dr.John",
-        "Age": "30 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "12",
-        "PatName": "Dr.Par",
-        "doctorname": "Dr.Sam",
-        "Age": "20 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "13",
-        "PatName": "Mr.BAN",
-        "doctorname": "Dr.John",
-        "Age": "60 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "14",
-        "PatName": "Mr.pal",
-        "doctorname": "Dr.Jenny",
-        "Age": "60 Y",
-        "sex": "FEMALE",
-      },
-      {
-        "RegNo": "15",
-        "PatName": "Mr.MAN",
-        "doctorname": "Dr.John",
-        "Age": "20 Y",
-        "sex": "MALE",
-      },
-      {
-        "RegNo": "16",
-        "PatName": "Mr.ABI",
-        "doctorname": "Dr.John",
-        "Age": "18 Y",
-        "sex": "MALE",
-      },
-      ////
-    ];
-  }
-
   tableWebView() {
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -483,14 +364,15 @@ class _TableModuleState extends State<TableModule> {
                                   columnIndexSort = columnIndex;
                                 });
                                 if (columnIndex == columnIndexSort) {
-List<DataTableList> existing=[];
-                                  for (int i = (selectedIndex - 1) * pageVisible;
-                                  i <
-                                      ((selectedIndex * pageVisible) >
-                                          dataTableList.length
-                                          ? dataTableList.length
-                                          : (selectedIndex * pageVisible));
-                                  i++){
+                                  List<DataTableList> existing = [];
+                                  for (int i =
+                                          (selectedIndex - 1) * pageVisible;
+                                      i <
+                                          ((selectedIndex * pageVisible) >
+                                                  dataTableList.length
+                                              ? dataTableList.length
+                                              : (selectedIndex * pageVisible));
+                                      i++) {
                                     existing.add(dataTableList[i]);
                                   }
 
@@ -568,15 +450,6 @@ List<DataTableList> existing=[];
                                       color: Colors.white,
                                     ),
                                   ),
-IconButton(
-                                  onPressed: () {
-
-                                  },
-                                  icon: Icon(
-                                    Icons.filter_alt_outlined,
-                                    color: Colors.white,
-                                  ))
-
                                 ],
                               )))
                           .toList(),
@@ -715,4 +588,137 @@ IconButton(
           }),
     );
   }
+}
+getJson() {
+  return [
+    {
+      "RegNo": "1",
+      "PatName": "Mr.Devilaal",
+      "doctorname": "Dr.Ram",
+      "Age": "26 Y",
+      "sex": "MALE",
+      "batch":"Batch 1"
+    },
+    {
+      "RegNo": "2",
+      "PatName": "Mr.Damodara",
+      "doctorname": "Dr.John",
+      "Age": "36 Y",
+      "sex": "MALE",
+      "batch":"Batch 2"
+    },
+    {
+      "RegNo": "3",
+      "PatName": "Mr.Daler",
+      "doctorname": "Dr.Jenny",
+      "Age": "36 Y",
+      "sex": "MALE",
+      "batch":"Batch 3"
+    },
+    {
+      "RegNo": "4",
+      "PatName": "Dr.Bhagat",
+      "doctorname": "Dr.Ram",
+      "Age": "36 Y",
+      "sex": "MALE",
+      "batch":"Batch 4"
+    },
+    {
+      "RegNo": "5",
+      "PatName": "Mr.Bansi",
+      "doctorname": "Dr.John",
+      "Age": "37 Y",
+      "sex": "MALE",
+      "batch":"Batch 1"
+    },
+    {
+      "RegNo": "6",
+      "PatName": "Mr.Balwant",
+      "doctorname": "Dr.Jenny",
+      "Age": "26 Y",
+      "sex": "MALE",
+      "batch":"Batch 2"
+    },
+    {
+      "RegNo": "7",
+      "PatName": "Mr.Balvinder",
+      "doctorname": "Dr.Ram",
+      "Age": "26 Y",
+      "sex": "MALE",
+      "batch":"Batch 3"
+    },
+    {
+      "RegNo": "8",
+      "PatName": "Mr.Abhay",
+      "doctorname": "Dr.Sam",
+      "Age": "26 Y",
+      "sex": "MALE",
+      "batch":"Batch 4"
+    },
+    {
+      "RegNo": "9",
+      "PatName": "Mr.Dev",
+      "doctorname": "Dr.Sam",
+      "Age": "36 Y",
+      "sex": "MALE",
+      "batch":"Batch 1"
+    },
+    {
+      "RegNo": "10",
+      "PatName": "Mr.Bani",
+      "doctorname": "Dr.Ram",
+      "Age": "39 Y",
+      "sex": "FEMALE",
+      "batch":"Batch 2"
+    },
+    {
+      "RegNo": "11",
+      "PatName": "Mr.DON",
+      "doctorname": "Dr.John",
+      "Age": "30 Y",
+      "sex": "MALE",
+      "batch":"Batch 3"
+    },
+    {
+      "RegNo": "12",
+      "PatName": "Dr.Par",
+      "doctorname": "Dr.Sam",
+      "Age": "20 Y",
+      "sex": "MALE",
+      "batch":"Batch 4"
+    },
+    {
+      "RegNo": "13",
+      "PatName": "Mr.BAN",
+      "doctorname": "Dr.John",
+      "Age": "60 Y",
+      "sex": "MALE",
+      "batch":"Batch 1"
+    },
+    {
+      "RegNo": "14",
+      "PatName": "Mr.pal",
+      "doctorname": "Dr.Jenny",
+      "Age": "60 Y",
+      "sex": "FEMALE",
+      "batch":"Batch 2"
+    },
+    {
+      "RegNo": "15",
+      "PatName": "Mr.MAN",
+      "doctorname": "Dr.John",
+      "Age": "20 Y",
+      "sex": "MALE",
+      "batch":"Batch 3"
+    },
+    {
+      "RegNo": "16",
+      "PatName": "Mr.ABI",
+      "doctorname": "Dr.John",
+      "Age": "18 Y",
+      "sex": "MALE",
+      "batch":"Batch 4"
+    },
+    ////
+  ];
 }

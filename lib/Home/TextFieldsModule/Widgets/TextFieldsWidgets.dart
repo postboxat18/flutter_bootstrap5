@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/Packages/flutter_bootstrap5.dart';
 
-
-
 menuFields(context) {
   return SingleChildScrollView(
     child: Column(
@@ -13,12 +11,13 @@ menuFields(context) {
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                  shape: BoxShape.rectangle, color: Colors.deepPurple),
+                borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.deepPurple)),
               child: Padding(
                 padding: const EdgeInsets.all(15),
                 child: Text(
                   "Menu Field $i",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.deepPurple),
                 ),
               ),
             ),
@@ -32,7 +31,8 @@ menuFields(context) {
 textFields(context) {
   return SingleChildScrollView(
     child: FB5Row(
-      classNames: 'row-cols-xs-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-7 row-cols-xxl-8',
+      classNames:
+          'row-cols-xs-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-7 row-cols-xxl-8',
       children: [
         for (int i = 0; i < 20; i++) ...[
           //FIELD 1

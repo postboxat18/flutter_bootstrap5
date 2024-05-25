@@ -59,7 +59,7 @@ class _DashState extends State<Dash> {
                 child: Text(
                   "DashBoard",
                   style: TextStyle(
-                      color: Colors.green[900],
+                      color: Colors.deepPurple,
                       fontSize: 16,
                       fontWeight: FontWeight.bold),
                 ),

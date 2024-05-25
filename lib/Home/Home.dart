@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/Home/Alert/AlertUI.dart';
 import 'package:flutter_bootstrap5/Home/Dash/dash.dart';
+import 'package:flutter_bootstrap5/Home/DragAndDrop/DragAndDrop.dart';
 import 'package:flutter_bootstrap5/Home/TextFieldsModule/TextFieldsModule.dart';
 import 'package:flutter_bootstrap5/Home/widgets/widgets.dart';
 import 'package:flutter_bootstrap5/Packages/flutter_bootstrap5.dart';
 
+import 'ChatBot/ChatBot.dart';
 import 'NavigationBarModule/NavBarModule.dart';
 import 'Table/TableModule.dart';
 
@@ -32,6 +34,8 @@ class _HomeState extends State<Home> {
     "Nav Module",
     "Alert Dialog",
     "Text Field Module",
+    "Drag and Drop"
+
   ];
   late List<String> multiList1 = [
     "Multi 1",
@@ -67,6 +71,8 @@ class _HomeState extends State<Home> {
             ),
             body: buildWidget(context),
             drawer: drawerFunc(),
+      floatingActionButton: chatBot(),
+
           )
         : Scaffold(
             appBar: AppBar(
@@ -204,6 +210,8 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+      floatingActionButton: chatBot(),
+
             //drawer: drawerFunc(),
           );
   }
@@ -219,6 +227,8 @@ class _HomeState extends State<Home> {
                     ? AlertUI()
                     : titleIndex == 4
                         ? TextFieldsModule()
+                        : titleIndex == 5
+                        ? DragAndDrop()
                         : Container(
                             color: Colors.yellow,
                           );
@@ -596,6 +606,50 @@ class _HomeState extends State<Home> {
           )
         ],
       ],
+    );
+  }
+
+  chatBot() {
+    return FloatingActionButton(
+      backgroundColor: Colors.deepPurple,
+      shape: CircleBorder(),
+      onPressed: () {
+        isDevice
+            ? Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ChatBot1(),
+            ))
+            : openAlertDialog();
+      },
+      child: Icon(
+        Icons.chat_outlined,
+        color: Colors.white,
+      ),
+    );
+  }
+
+  openAlertDialog() {
+    showGeneralDialog(
+      context: context,
+      barrierColor: Colors.black54,
+      barrierDismissible: true,
+      barrierLabel: 'Label',
+      pageBuilder: (_, __, ___) {
+        return Align(
+          alignment: Alignment.centerRight,
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.2,
+            height: MediaQuery.of(context).size.height * 0.8,
+            margin: EdgeInsets.all(15),
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.2,
+              maxHeight: MediaQuery.of(context).size.height * 0.8,
+            ),
+            child: ChatBot1(),
+          ),
+        );
+      },
     );
   }
 }
