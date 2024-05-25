@@ -13,7 +13,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   late double width;
-
+  
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
