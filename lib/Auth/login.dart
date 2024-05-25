@@ -1,5 +1,3 @@
-library flutter_bootstrap5;
-
 import 'package:flutter/material.dart';
 import '../Home/Home.dart';
 import '../Packages/flutter_bootstrap5.dart';
