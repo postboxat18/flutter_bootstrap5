@@ -1,4 +1,3 @@
-library flutter_bootstrap5;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/Home/Alert/AlertUI.dart';
@@ -12,14 +11,14 @@ import 'ChatBot/ChatBot.dart';
 import 'NavigationBarModule/NavBarModule.dart';
 import 'Table/TableModule.dart';
 
-class FlutterBootStrap5 extends StatefulWidget {
-  const FlutterBootStrap5({super.key});
+class Home extends StatefulWidget {
+  const Home({super.key});
 
   @override
-  State<FlutterBootStrap5> createState() => _FlutterBootStrap5State();
+  State<Home> createState() => _HomeState();
 }
 
-class _FlutterBootStrap5State extends State<FlutterBootStrap5> {
+class _HomeState extends State<Home> {
   late double width;
   late int titleIndex = 0;
   late int multiIndex = -1;

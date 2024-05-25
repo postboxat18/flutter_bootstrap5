@@ -1,7 +1,7 @@
+library flutter_bootstrap5;
+
 import 'package:flutter/material.dart';
-import 'package:flutter_bootstrap5/Home/FlutterBootStrap5.dart';
-
-
+import 'package:flutter_bootstrap5/Home/Home.dart';
 import '../Packages/flutter_bootstrap5.dart';
 
 class Login extends StatefulWidget {
@@ -87,7 +87,7 @@ class _LoginState extends State<Login> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => FlutterBootStrap5(),
+                                      builder: (context) => Home(),
                                     ));
                               },
                               style: ElevatedButton.styleFrom(
