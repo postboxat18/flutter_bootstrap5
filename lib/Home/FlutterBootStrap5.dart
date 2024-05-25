@@ -12,14 +12,14 @@ import 'ChatBot/ChatBot.dart';
 import 'NavigationBarModule/NavBarModule.dart';
 import 'Table/TableModule.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class FlutterBootStrap5 extends StatefulWidget {
+  const FlutterBootStrap5({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<FlutterBootStrap5> createState() => _FlutterBootStrap5State();
 }
 
-class _HomeState extends State<Home> {
+class _FlutterBootStrap5State extends State<FlutterBootStrap5> {
   late double width;
   late int titleIndex = 0;
   late int multiIndex = -1;
