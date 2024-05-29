@@ -1,5 +1,7 @@
+library flutter_bootstrap5;
+
 import 'package:flutter/material.dart';
-import '../Home/Home.dart';
+import 'package:flutter_bootstrap5/Home/Home.dart';
 import '../Packages/flutter_bootstrap5.dart';
 
 class Login extends StatefulWidget {
@@ -11,7 +13,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   late double width;
-
+  
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
