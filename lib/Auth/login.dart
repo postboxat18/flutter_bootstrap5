@@ -29,7 +29,8 @@ class _LoginState extends State<Login> {
             children: [
               FB5Col(
                 classNames:
-                    'col-xs-12 col-sm-12 col-md-3 m-5 col-lg-3 col-xl-3 col-xxl-3',
+                'col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3  m-5',
+
                 child: Card(
                   color: Colors.white,
                   margin: EdgeInsets.zero,
