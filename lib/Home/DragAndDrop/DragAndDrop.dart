@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_listfilter/flutter_listfilter.dart';
 import 'package:grouped_list/grouped_list.dart';
 
-import '../../Packages/flutter_bootstrap5.dart';
+import 'package:flutterbootstrap5latest/flutterbootstrap5.dart';
 import '../Table/TableModule.dart';
 import '../widgets/widgets.dart';
 import 'Model/DragAndDropModel.dart';

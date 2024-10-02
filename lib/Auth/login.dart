@@ -2,7 +2,7 @@ library flutter_bootstrap5;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/Home/Home.dart';
-import '../Packages/flutter_bootstrap5.dart';
+import 'package:flutterbootstrap5latest/flutterbootstrap5.dart';
 
 class Login extends StatefulWidget {
   Login({super.key});
@@ -13,7 +13,7 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   late double width;
-  
+
   @override
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
@@ -31,8 +31,7 @@ class _LoginState extends State<Login> {
             children: [
               FB5Col(
                 classNames:
-                'col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3  m-5',
-
+                    'col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3  m-5',
                 child: Card(
                   color: Colors.white,
                   margin: EdgeInsets.zero,

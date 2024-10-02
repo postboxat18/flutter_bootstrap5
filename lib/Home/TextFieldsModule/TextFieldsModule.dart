@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bootstrap5/Home/widgets/widgets.dart';
-import 'package:flutter_bootstrap5/Packages/flutter_bootstrap5.dart';
+import 'package:flutterbootstrap5latest/flutterbootstrap5.dart';
 import 'Widgets/TextFieldsWidgets.dart';
 
 class TextFieldsModule extends StatefulWidget {

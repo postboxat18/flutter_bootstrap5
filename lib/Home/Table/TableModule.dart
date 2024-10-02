@@ -7,7 +7,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_listfilter/flutter_listfilter.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-import '../../Packages/flutter_bootstrap5.dart';
+import 'package:flutterbootstrap5latest/flutterbootstrap5.dart';
 
 import '../widgets/widgets.dart';
 import 'Model/DataTableList.dart';
